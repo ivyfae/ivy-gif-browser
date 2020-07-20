@@ -11,7 +11,7 @@ export interface GifResultProps {
 export const GifResult = (props: GifResultProps) => {
   return (
       <NavLink
-        to={{ pathname: `/details/${props.gif.id}` }}
+        to={{ pathname: `${process.env.PUBLIC_URL}/details/${props.gif.id}` }}
         className="gif"
         key={props.gif.id}>
         <video autoPlay loop muted playsInline>

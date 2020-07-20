@@ -22,17 +22,19 @@ const store: Store = createStore(gifReducer, {
   totalCount: 0,
 }, applyMiddleware(thunk));
 
+const baseUrl = process.env.PUBLIC_URL; 
+
 export default function Root() {
   return (
     <Router>
-      <Route path="/search/:terms">
+      <Route path={baseUrl + "/search/:terms"}>
         <Search />
         <Results />
       </Route>
-      <Route path="/details/:id">
+      <Route path={baseUrl + "/details/:id"}>
         <GifDetails />
       </Route>
-      <Route exact={true} path="/">
+      <Route exact={true} path={baseUrl + "/"}>
         <Search />
         <Results />
       </Route>

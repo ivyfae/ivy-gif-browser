@@ -1,6 +1,6 @@
 export const Settings = {
   giphy: {
-    url: 'http://api.giphy.com/v1/gifs/',
+    url: 'https://api.giphy.com/v1/gifs/',
     apiKey: '', // insert your API key here. See README.md for more information.
     limit: 50
   }
