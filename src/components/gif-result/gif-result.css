@@ -1,0 +1,7 @@
+.gif {
+  transition: 250ms;
+}
+
+.gif:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,24 @@
+.gif-details {
+  text-align: center;
+  transition: 750ms;
+}
+
+.gif-details a.back {
+  display: block;
+  text-align: left;
+  font-size: 1.8em;
+  line-height: 1.8em;
+  background: rgb(26, 26, 34);
+  padding-left: 1em;
+}
+
+.gif-details img {
+  max-height: 50vh;
+  object-fit: contain;
+  margin: 1em;
+}
+
+a {
+  cursor: pointer;
+  color: white;
+}

@@ -1,0 +1,54 @@
+.search.header {
+  
+  transition: 1s ease-in-out;
+}
+
+.search.header .searchBox {
+  display: flex;
+  width: 100%;
+}
+
+.search.header input,
+.search.header button {
+  font-size: 1.8em;
+  line-height: 1.8em;
+  background: transparent;
+  color: white;
+  border: none;
+}
+
+.search.header input:focus {
+  background: rgb(26, 26, 34);
+}
+
+.search.header input {
+  flex: 1;
+  padding-left: .5em;
+  outline: none;
+  transition: 500ms;
+}
+
+.loading .search.header {
+ line-height: 4em; 
+}
+
+.search.header button{
+  flex-grow: 0;
+  background: rgb(143, 143, 241);
+  transition: 750ms;
+  opacity: 1;
+}
+
+.search.header button:disabled {
+  opacity: 0.3;
+}
+
+.status {
+  height: 0;
+  transition: 750ms;
+}
+
+.loading .status {
+  display: block;
+  height: 4em;
+}

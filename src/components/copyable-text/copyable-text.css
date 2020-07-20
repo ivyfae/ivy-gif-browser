@@ -1,0 +1,41 @@
+.detail {
+  display: flex;
+  flex-direction: row;
+  margin: 1em;
+}
+
+.detail .label {
+  width: 100px;
+}
+
+.detail input {
+  flex: 1;
+  font-size: 1.2em;
+}
+
+.detail button {
+  flex-grow: 0;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  background: rgb(41, 41, 61);
+  color: white;
+}
+
+.detail button:hover {
+  animation: loading 3s linear infinite;
+  background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+  background-size: 200% 200%;
+  text-align: center;
+  text-shadow: 0 0 4px black;
+  color: white;
+}
+
+.detail .text-box {
+  background: white;
+  flex: 1;
+  border: 1px solid black;
+  color: black;
+  font-size: 1.2em;
+  text-align: left;
+}
